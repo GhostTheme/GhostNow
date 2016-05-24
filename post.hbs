@@ -1,0 +1,18 @@
+{{!< default}}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+<div id="main" role="main" class="container">
+      <article class="post">
+  <h2>{{title}}</h1>
+  <div class="entry">
+            {{content}}
+  </div>
+  <div class="date">
+    Written on {{date format="DD MMMM YYYY"}}
+  </div>
+  
+</article>
+
+    </div>
+{{/post}}

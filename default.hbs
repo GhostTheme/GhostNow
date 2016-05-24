@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+
+    {{ghost_head}}
+</head>
+<body class="{{body_class}} nav-closed">
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+        {{#if @blog.logo}}
+        <a class="site-avatar" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
+          <div class="site-info">
+              <h1 class="site-name"><b><a href="/">{{@blog.title}}</a></b></h1>
+              <p class="site-description">{{@blog.description}}</p>
+          </div>
+            {{navigation}}
+        </header>
+      </div>
+    </div>
+    {{> "sideads"}}
+        {{! Everything else gets inserted here }}
+        {{{body}}}
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+            {{> "footads"}}
+<a href="https://github.com/GhostTheme"><i class="svg-icon github"></i></a>
+<a href="https://www.twitter.com/sudoask"><i class="svg-icon twitter"></i></a>
+        </footer>
+      </div>
+    </div>
+    {{ghost_foot}}
+</body>
+</html>
