@@ -6,12 +6,19 @@
       <article class="post">
   <h2>{{title}}</h1>
   <div class="entry">
+  <div class="date">
+  <p>  Written on {{date format="DD MMMM YYYY"}}</p>
+  </div>
+	{{#if image}}
+	<span class="post-image">
+        <p><img src="{{image}}" alt="{{title}}"/></p>
+	</span>
+      {{/if}}
             {{content}}
   </div>
-  <div class="date">
-    Written on {{date format="DD MMMM YYYY"}}
-  </div>
+{{> "relate"}}  
 {{> "share"}}  
+ <div class="tag"> {{tags separator=" " prefix="Read more on "}}</div>
 </article>
 
     </div>
