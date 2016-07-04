@@ -1,0 +1,9 @@
+{{#get "posts" limit="3" include="tags" fields="title,slug" as |articles|}}
+<div class="right relate">
+<ul>
+    {{#foreach articles}}
+       <li> <a href="/{{slug}}">{{title}}</a></li>
+    {{/foreach}}
+</ul>
+</div>
+{{/get}}

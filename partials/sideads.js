@@ -1,26 +1,20 @@
 <style>
 @media(min-width: 1300px) {
-  .profile {
+/*  .profile {
     position: absolute;
-    right: 5%;
+    right: 4%;
     width: 15%;
     top: 25px;
   }
-}
-@media(max-width: 500px) { 
-  .adsprofile { width: 468px; height: 60px; } 
-}
-@media(max-width: 800px) { 
-     .adsprofile { 
-          width: 728px; height: 90px;
-     } 
+  */
 }
 .profile{
   text-align: center;
+  margin: 0 auto;
+  max-width: 790px;
 }
 </style>
 <div class="profile">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Pagi -->
 <ins class="adsbygoogle adsprofile"
      style="display:block"

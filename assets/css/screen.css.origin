@@ -793,21 +793,18 @@ code {
   border-color: #9EABB3
 }
 pre {
-    font: 500 15px 'Source Code Pro',Arial,Serif;
-    display: block;
-    padding: 9.5px;
-    margin: 0 0 10px;
-    font-size: 13px;
-    line-height: 1.42857143;
-    word-break: break-all;
-    word-wrap: break-word;
-    background-color: #f5f5f5;
-    border: 0;
-    -moz-tab-size: 4;
-    border-left: 5px solid #558abb;
-    border-radius: 0;
-    color: #4d4e53;
+    background: #313339;
     white-space: pre-line;
+    border: 0;
+    color: #fff;
+    margin: 40px 0;
+    font: 500 15px 'Source Code Pro',Arial,Serif;
+    line-height: 36px;
+    padding: 25px 35px;
+    overflow-x: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
 .tag a{
   color: #12b5a3;
@@ -819,7 +816,7 @@ pre {
 }
  .post-image {
   display: block;float: right;
-  margin: 5px;
+  margin: 10px;
   max-width: 350px;
   box-shadow: none;
 }
