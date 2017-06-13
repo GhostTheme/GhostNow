@@ -1,5 +1,7 @@
 # GhostNow
 GhostNow is a fork version of Jekyll Now theme. 
+A fork of Jekyll Now theme, Now become Ghost Blog Platform theme: GhostNow 
+DEMO: http://blog.sudoask.com
 To download, visit the [releases](https://github.com/GhostTheme/GhostNow/releases) page.
 
 ## Copyright & License
